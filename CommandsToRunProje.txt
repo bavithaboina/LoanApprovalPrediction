@@ -1,0 +1,11 @@
+1. Virtual Environment
+Use -p option to specify the path to your env  the below command created venv in the same directory where the project is
+conda create -p LoanApprovalEnv python==3.9.12 -y   
+or
+conda create -n 'environment_name' python=3.6
+creates venv in envs of anaconda 
+ex. C:\Users\lenovo\anaconda3\envs 
+
+2. install the correct versions of packages as well mainly scikit-learn
+3. run the code ...
+python app.py
