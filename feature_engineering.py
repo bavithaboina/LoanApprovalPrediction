@@ -68,3 +68,9 @@ class FeatureEngineering():
         data = self.rearrange(data)
         return data
     
+    def required_format(self,data):
+        numerical_features = ["LoanAmount","ApplicantIncome","CoapplicantIncome","Loan_Amount_Term","Credit_History"]
+        for feature in data.keys():
+            if feature in numerical_features:
+                data[feature] = int(data[feature])
+        return data

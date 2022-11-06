@@ -9,3 +9,4 @@ ex. C:\Users\lenovo\anaconda3\envs
 2. install the correct versions of packages as well mainly scikit-learn
 3. run the code ...
 python app.py
+4. json validator to validate your json

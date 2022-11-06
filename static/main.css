@@ -1,0 +1,38 @@
+
+.form-box {
+    padding: 8px; /*makes it look neat*/
+    border-radius: 4px; /*or 2px*/
+    border: 2px solid black;
+    /*padding-right: 150px;*/
+    margin-right: 450px;
+    margin-left: 425px;
+  }
+
+ 
+h1 {
+
+    text-align: center;
+    
+    }
+
+body {
+        font-family: Arial, sans-serif;
+
+        background: url(https://www.axisbank.com/images/default-source/revamp_new/loans/tablet/home-loan-tab.jpg?sfvrsn=c0c29955_2) no-repeat;
+        
+        
+        background-size: cover;
+        height: 100vh;
+      }
+button:hover{
+  background-color: #1c5434;
+  color : white;
+}
+button {
+  border-color: #1c5434;
+ 
+  border-radius: 5px;
+  background-color: white;
+  color:#1c5434;
+  
+}

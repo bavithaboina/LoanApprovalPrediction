@@ -31,6 +31,25 @@ def predict_api():
     else :
         return "Yes"
 
-    
+@app.route("/predict",methods = ["POST"])    
+def predict():
+    data = {item[0]:item[1] for item in request.form.items()}
+    print(data)
+    fe = FeatureEngineering()
+    data = fe.required_format(data)
+    print(data)
+    data = fe.feature_engineering(data)
+    print(data)
+    # convert data to array to feed to algorithm for predictions
+    data = np.array([value for value in data.values()])
+    # reshape the array as there is single row
+    data = data.reshape(1, -1)
+    output = rf_model.predict(data)[0]
+    if output == 0:
+        return render_template("output.html",value = 0,prediction_text="Loan will not be approved")
+    else :
+        return render_template("output.html",value = 1,prediction_text="Loan will  be approved")
+
+
 if __name__=="__main__":
     app.run(debug = True)

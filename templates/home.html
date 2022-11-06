@@ -1,3 +1,162 @@
-<h1>
-    LoanApprovalPrediction
-</h1>
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href='/static/main
+.css' />
+
+  
+</head>
+
+<body>
+ <div class="login " >
+	<h1>Home Loan Approval Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post" class = "form-box" >
+        <p >
+            <label>Loan ID : 
+                <input type="text" required = "required"  placeholder="Ex:LP001002" name="Loan_ID"  />
+            </label>
+        </p>
+
+        <p> 
+            <label>Gender :
+                <br>
+                <input type="radio" id="male" name="Gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="Gender" value="Female">
+                <label for="female">Female</label><br>
+            </label>
+        </p>
+
+        <p> 
+            <label>Married :
+                <br>
+                <input type="radio" id="yes" name="Married" value="Yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="Married" value="No">
+                <label for="no">No</label><br>
+            </label>
+        </p>
+
+        <p> 
+            <label>Dependents :
+                <br>
+                <input type="radio" id="0" name="Dependents" value="0">
+                <label for="0">0 dependents</label>
+                <input type="radio" id="1" name="Dependents" value="1">
+                <label for="1">1 dependent</label>
+                <input type="radio" id="2" name="Dependents" value="2">
+                <label for="2">2 dependents</label>
+                <input type="radio" id="3+" name="Dependents" value="3+">
+                <label for="3+">3+ dependents</label><br>
+            </label>
+        </p>
+
+        <p> 
+            <label>Education :
+                <br>
+                <input type="radio" id="graduate" name="Education" value="Graduate">
+                <label for="graduate">Graduate</label>
+                <input type="radio" id="not graduate" name="Education" value="Not Graduate">
+                <label for="not graduate">Not Graduate</label><br>
+            </label>
+        </p>
+
+        <p> 
+            <label>Self Employed :
+                <br>
+                <input type="radio" id="yes" name="Self_Employed" value="Yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="Self_Employed" value="No">
+                <label for="no">No</label><br>
+            </label>
+        </p>
+
+        <p>
+            <label> Applicant Income: 
+                <input type="numer" required = "required"  placeholder="monthly income in EGP" name="ApplicantIncome"/>
+            </label>
+        </p>
+
+        <p>
+            <label> Co-Applicant Income(per month in EGP): 
+                <input type="numer" required = "required"  placeholder="monthly incomein EGP " value =0 name="CoapplicantIncome"/>
+            </label>
+        </p>
+
+        <p>
+            <label> Loan Amount: 
+                <input type="numer" required = "required"  placeholder="in thousands" name="LoanAmount"/>
+            </label>
+        </p>
+
+        <p> 
+            <label>Term of Loan (in months):
+                <br>
+                <input type="radio" id="12" name="Loan_Amount_Term" value=12>
+                <label for="12">12 </label>
+                <input type="radio" id="36" name="Loan_Amount_Term" value=36>
+                <label for="36">36 </label>
+                <input type="radio" id="60" name="Loan_Amount_Term" value=60>
+                <label for="60">60 </label>
+                <input type="radio" id="84" name="Loan_Amount_Term" value=84>
+                <label for="84">84 </label>
+                <input type="radio" id="120" name="Loan_Amount_Term" value=120>
+                <label for="120">120 </label>
+                <input type="radio" id="180" name="Loan_Amount_Term" value=180>
+                <label for="180">180 </label>
+                <input type="radio" id="240" name="Loan_Amount_Term" value=240>
+                <label for="240">240 </label>
+                <input type="radio" id="300" name="Loan_Amount_Term" value=300>
+                <label for="300">300 </label>
+                <input type="radio" id="360" name="Loan_Amount_Term" value=360>
+                <label for="360">360 </label>
+                <input type="radio" id="480" name="Loan_Amount_Term" value=480>
+                <label for="480">480 </label><br>
+            </label>
+        </p>
+
+        <p> 
+            <label> Credit History meet guidelines:
+                <br>
+                <input type="radio" id="yes" name="Credit_History" value=1>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="Credit_History" value=0>
+                <label for="no">No</label><br>
+            </label>
+        </p>
+        
+        <p> 
+            <label>Property_Area :
+                <br>
+                <input type="radio" id="urban" name="Property_Area" value="Urban">
+                <label for="urban">Urban</label>
+                <input type="radio" id="semi-urban" name="Property_Area" value="Semiurban">
+                <label for="semi-urban">Semiurban</label>
+                <input type="radio" id="rural" name="Property_Area" value="Rural">
+                <label for="rural">Rural</label>
+                
+            </label>
+        </p>
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large" >Predict</button>
+
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ 
+
+</body>
+</html>

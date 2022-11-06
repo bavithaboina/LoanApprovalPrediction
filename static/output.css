@@ -1,0 +1,12 @@
+h1{
+color:black
+}
+body {
+  font-family: Arial, sans-serif;
+
+  background: url(https://www.axisbank.com/images/default-source/revamp_new/loans/tablet/home-loan-tab.jpg?sfvrsn=c0c29955_2) no-repeat;
+  
+  
+  background-size: cover;
+  height: 100vh;
+}

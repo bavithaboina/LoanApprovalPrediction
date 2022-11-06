@@ -7,11 +7,25 @@
 3. [VS Code IDE](https://code.visualstudio.com/)
 4. [Git CLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
 
-Create a new environment
+Executing on the local system:
+
+Step 1: Create a new environment
 
     conda create -p LoanApprovalEnv python==3.7 -y
 
-sample data for o/p "yes":
+Step 2 : navigate to the location of the downloaded file and activate the environment created
+
+   conda activate LoanApprovalEnv
+
+Step 3 : install the required packages
+
+   pip install -r requirements.txt
+
+Step 4: Run the code
+
+   python app.py
+
+Sample data for o/p "yes":
 {
    "data": {
       "Loan_ID": "LP001015",
@@ -28,7 +42,9 @@ sample data for o/p "yes":
       "Property_Area": "Urban"
    }
 }
-sample data for o/p "no":
+
+
+Sample data for o/p "no":
 {
    "data": {
       "Loan_ID": "LP001056",
