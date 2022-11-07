@@ -30,10 +30,12 @@ jobs:
           
           # Heroku API key associated with provided user's email.
           # Api Key is available under your Heroku account settings.
-          render_api_key: ${{ secrets.RENDER_API_KEY }}
+          password: ${{ secrets.RENDER_PASSWORD }}
           
           # Name of the heroku application to which the build is to be sent.
-          render_app_name: ${{ secrets.RENDER_APP_NAME }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+          service-id: srv-cdkg87cgqg433ffk7gu0?key=YC1-8oNZnKs
 
           # (Optional, default: "./")
           # Dockerfile directory.
