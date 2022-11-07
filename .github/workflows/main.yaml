@@ -35,7 +35,7 @@ jobs:
           # Name of the heroku application to which the build is to be sent.
           token: ${{ secrets.GITHUB_TOKEN }}
 
-          service-id: srv-cdkg87cgqg433ffk7gu0?key=YC1-8oNZnKs
+          service-id: srv-cdkg87cgqg433ffk7gu0
 
           # (Optional, default: "./")
           # Dockerfile directory.
