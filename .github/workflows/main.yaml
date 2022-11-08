@@ -59,8 +59,8 @@ jobs:
           #process_type: web
           
       - name: REST API with curl
-      run: |
-        curl -X POST "https://api.render.com/deploy/srv-cdkg87cgqg433ffk7gu0?key=YC1-8oNZnKs"
+        run: |
+          curl -X POST "https://api.render.com/deploy/srv-cdkg87cgqg433ffk7gu0?key=YC1-8oNZnKs"
    
           
 ### ⬆ IMPORTANT PART ⬆ ###
