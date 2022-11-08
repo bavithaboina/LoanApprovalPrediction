@@ -37,9 +37,7 @@ jobs:
 
           service-id: srv-cdkg87cgqg433ffk7gu0
 
-        run: |
-           curl -X POST "https://api.render.com/deploy/srv-cdkg87cgqg433ffk7gu0?key=YC1-8oNZnKs"
-   
+        
 
           # (Optional, default: "./")
           # Dockerfile directory.
@@ -60,9 +58,9 @@ jobs:
           # For more information look at https://devcenter.heroku.com/articles/process-model
           #process_type: web
           
-      #- name: REST API with curl
-      #run: |
-      #  curl -X POST "https://api.render.com/deploy/srv-cdkg87cgqg433ffk7gu0?key=YC1-8oNZnKs"
+      - name: REST API with curl
+      run: |
+        curl -X POST "https://api.render.com/deploy/srv-cdkg87cgqg433ffk7gu0?key=YC1-8oNZnKs"
    
           
 ### ⬆ IMPORTANT PART ⬆ ###
