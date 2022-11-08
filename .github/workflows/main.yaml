@@ -37,7 +37,7 @@ jobs:
 
           service-id: srv-cdkg87cgqg433ffk7gu0
 
-          run: |
+        run: |
            curl -X POST "https://api.render.com/deploy/srv-cdkg87cgqg433ffk7gu0?key=YC1-8oNZnKs"
    
 
