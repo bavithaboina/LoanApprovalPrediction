@@ -25,37 +25,3 @@ Step 4: Run the code
 
    python app.py
 
-Sample data for o/p "yes":
-{
-   "data": {
-      "Gender": "Male",
-      "Married": "Yes",
-      "Dependents": "0",
-      "Education": "Graduate",
-      "Self_Employed": "No",
-      "ApplicantIncome": 5720,
-      "CoapplicantIncome": 0,
-      "LoanAmount": 110,
-      "Loan_Amount_Term": 360,
-      "Credit_History": 1,
-      "Property_Area": "Urban"
-   }
-}
-
-
-Sample data for o/p "no":
-{
-   "data": {
-      "Gender": "Male",
-      "Married": "Yes",
-      "Dependents": "2",
-      "Education": "Not Graduate",
-      "Self_Employed": "No",
-      "ApplicantIncome": 3881,
-      "CoapplicantIncome": 0,
-      "LoanAmount": 147,
-      "Loan_Amount_Term": 360,
-      "Credit_History": 0,
-      "Property_Area": "Rural"
-   }
-}
