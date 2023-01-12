@@ -34,6 +34,11 @@ def predict_api():
 @app.route("/predict",methods = ["POST"])    
 def predict():
     data = {item[0]:item[1] for item in request.form.items()}
+    #we are capturing rupees so lets convert to EGP
+    data['ApplicantIncome'] = float(data['ApplicantIncome'])*0.3623
+    data['CoapplicantIncome'] = float(data['CoapplicantIncome'])*0.3623
+    print("***",data['ApplicantIncome'])
+    print("***",data['CoapplicantIncome'])
     print(data)
     fe = FeatureEngineering()
     data = fe.required_format(data)

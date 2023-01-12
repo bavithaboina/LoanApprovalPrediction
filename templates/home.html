@@ -20,12 +20,7 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post" class = "form-box" >
-        <p >
-            <label>Loan ID : 
-                <input type="text" required = "required"  placeholder="Ex:LP001002" name="Loan_ID"  />
-            </label>
-        </p>
-
+        
         <p> 
             <label>Gender :
                 <br>
@@ -82,19 +77,19 @@
 
         <p>
             <label> Applicant Income: 
-                <input type="numer" required = "required"  placeholder="monthly income in EGP" name="ApplicantIncome"/>
+                <input type="number" required = "required"  placeholder="monthly income in INR" name="ApplicantIncome"/>
             </label>
         </p>
 
         <p>
-            <label> Co-Applicant Income(per month in EGP): 
-                <input type="numer" required = "required"  placeholder="monthly incomein EGP " value =0 name="CoapplicantIncome"/>
+            <label> Co-Applicant Income: 
+                <input type="number" required = "required"  placeholder="monthly incomein INR"  name="CoapplicantIncome"/>
             </label>
         </p>
 
         <p>
             <label> Loan Amount: 
-                <input type="numer" required = "required"  placeholder="in thousands" name="LoanAmount"/>
+                <input type="number" required = "required"  placeholder="INR (in thousands)" name="LoanAmount"/>
             </label>
         </p>
 
