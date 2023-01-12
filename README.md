@@ -28,7 +28,6 @@ Step 4: Run the code
 Sample data for o/p "yes":
 {
    "data": {
-      "Loan_ID": "LP001015",
       "Gender": "Male",
       "Married": "Yes",
       "Dependents": "0",
@@ -47,7 +46,6 @@ Sample data for o/p "yes":
 Sample data for o/p "no":
 {
    "data": {
-      "Loan_ID": "LP001056",
       "Gender": "Male",
       "Married": "Yes",
       "Dependents": "2",
