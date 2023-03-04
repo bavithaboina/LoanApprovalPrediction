@@ -43,4 +43,4 @@ Step 4: Run the code
         * EMI
         * Balance Income
 7. Use different classification algorithms ,perform hyper parameter tuning and finalise the model based on the evaluation criteria(Here I have used accuracy)
-8. Now you can pickle the model so that it can be used while creating a flask api
+8. Now you can create a pickle file for the final model and use it in your  flask api
