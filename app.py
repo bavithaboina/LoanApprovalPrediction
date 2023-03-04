@@ -1,10 +1,12 @@
 import pickle
 from flask import Flask,request ,app,jsonify,url_for,render_template
+from flask_cors import CORS
 import numpy as np
 import pandas as pd
 from feature_engineering import FeatureEngineering
 
 app = Flask(__name__)
+CORS(app)
 # Load the model
 rf_model = pickle.load(open("RFmodel.pkl","rb"))
 
