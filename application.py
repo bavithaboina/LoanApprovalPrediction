@@ -5,16 +5,16 @@ import numpy as np
 import pandas as pd
 from feature_engineering import FeatureEngineering
 
-app = Flask(__name__)
-CORS(app)
+application = Flask(__name__)
+CORS(application)
 # Load the model
 rf_model = pickle.load(open("RFmodel.pkl","rb"))
 
-@app.route('/')
+@application.route('/')
 def home():
     return render_template('home.html')
 
-@app.route('/predict_api',methods = ['POST'])
+@application.route('/predict_api',methods = ['POST'])
 def predict_api():
 
     data = request.json['data']
@@ -33,7 +33,7 @@ def predict_api():
     else :
         return "Yes"
 
-@app.route("/predict",methods = ["POST"])    
+@application.route("/predict",methods = ["POST"])    
 def predict():
     data = {item[0]:item[1] for item in request.form.items()}
     #we are capturing rupees so lets convert to EGP
@@ -59,4 +59,4 @@ def predict():
 
 
 if __name__=="__main__":
-    app.run(debug = True)
+    application.run(debug = True)
