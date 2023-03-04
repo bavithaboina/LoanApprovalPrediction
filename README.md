@@ -25,7 +25,7 @@ Step 4: Run the code
 
    python app.py
 
-Steps I followed to  create a Machine Learning Model
+## Steps I followed to  create a Machine Learning Model
 1. Understand the problem statement
 2. Hypothesis Generation (list out all the possible factors that can affect the outcome before looking at the data)
 3. Have a look at the meaning of each feature provided
